@@ -1,0 +1,1992 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "hi there",
+        "hello there",
+        "hey there",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "howdy",
+        "greetings",
+        "yo",
+        "hiya",
+        "what's up",
+        "sup",
+        "hii",
+        "hiii",
+        "hlo",
+        "hloo",
+        "hlw",
+        "hllo",
+        "helo",
+        "hellooo",
+        "helloo",
+        "hey hey",
+        "heyy",
+        "heya",
+        "hy",
+        "hye",
+        "hie",
+        "hai",
+        "hallo",
+        "hola",
+        "namaste",
+        "namaskar",
+        "salaam",
+        "assalamualaikum",
+        "wazzup",
+        "whats up",
+        "hi bot",
+        "hello bot",
+        "hey bot",
+        "hii there",
+        "hello hello",
+        "gm",
+        "good mrng",
+        "gud morning",
+        "gud evening",
+        "gud afternoon",
+        "hello sir",
+        "hi bro",
+        "hey buddy",
+        "hello friend",
+        "hi friend",
+        "hey man",
+        "hello how are you",
+        "hi how are you",
+        "hlo bro",
+        "hii bro",
+        "hey there bot",
+        "wassup bro"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What would you like to talk about?",
+        "Hey! Nice to see you. Ask me anything."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you",
+        "how are you doing",
+        "how do you do",
+        "how is it going",
+        "how's it going",
+        "how are things",
+        "are you ok",
+        "are you well",
+        "how have you been",
+        "how is life treating you",
+        "how are you feeling",
+        "hru",
+        "kaise ho"
+      ],
+      "responses": [
+        "I'm just a bunch of code, but I'm doing great, thanks for asking! How about you?",
+        "Running smoothly, no bugs so far. How are you?"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "what's your name",
+        "who are you",
+        "tell me your name",
+        "what should I call you",
+        "your name",
+        "introduce yourself",
+        "what are you called",
+        "name"
+      ],
+      "responses": [
+        "I'm a simple NLP chatbot built with Python, NLTK, TF-IDF and Flask.",
+        "You can call me Chatbot. I recognise intents using TF-IDF and cosine similarity."
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "who made you",
+        "who created you",
+        "who built you",
+        "who is your creator",
+        "who is your programmer",
+        "who developed you",
+        "who is your developer",
+        "who wrote you",
+        "creator",
+        "who is behind you",
+        "who designed this bot"
+      ],
+      "responses": [
+        "I was built as a small Python project using Flask, NLTK and scikit-learn.",
+        "A developer wrote me in Python. My brain is just TF-IDF vectors and cosine similarity!"
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "what can you do",
+        "help",
+        "help me",
+        "what do you know",
+        "what can I ask you",
+        "how can you help me",
+        "what are your features",
+        "what are your abilities",
+        "can you help me",
+        "what topics do you know"
+      ],
+      "responses": [
+        "I can chat, tell jokes, give the time and date, and explain coding basics (what is code, why coding matters), Python, data structures, algorithms, CSE subjects (OS, DBMS, networks), tools like Git, Docker and VS Code, plus project ideas and career roadmaps. Try: \"what is coding\", \"why is coding necessary\" or \"what is a stack\".",
+        "Ask me things like: \"what is code\", \"what is cse\", \"what is programming\", \"why learn coding\", \"what is a list in python\", \"what is deadlock\", \"git commands\" or \"project ideas for cse\"."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it",
+        "what is the time",
+        "what's the time",
+        "tell me the time",
+        "current time",
+        "time now",
+        "do you know the time",
+        "what time is it now",
+        "got the time",
+        "time"
+      ],
+      "responses": [
+        "It's {time} right now.",
+        "The current time is {time}."
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what is the date",
+        "what's the date",
+        "what day is it",
+        "what is today's date",
+        "today's date",
+        "tell me the date",
+        "what is today",
+        "current date",
+        "what day is today",
+        "which day is it",
+        "date"
+      ],
+      "responses": [
+        "Today is {date}.",
+        "It's {date}."
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke",
+        "joke",
+        "make me laugh",
+        "say something funny",
+        "do you know any jokes",
+        "tell a joke",
+        "I want to hear a joke",
+        "give me a joke",
+        "another joke",
+        "funny",
+        "jokes"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "Why did the NLP model go to therapy? It had too many unresolved dependencies.",
+        "I told my computer I needed a break. Now it won't stop sending me Kit-Kat ads.",
+        "There are 10 kinds of people: those who understand binary and those who don't."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "thank you so much",
+        "thx",
+        "many thanks",
+        "appreciate it",
+        "cheers",
+        "that was great",
+        "great thanks",
+        "thanku",
+        "thank u",
+        "tysm",
+        "ty",
+        "thanks bro",
+        "thanx",
+        "shukriya",
+        "dhanyavaad",
+        "nice thanks"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later",
+        "see you soon",
+        "talk to you later",
+        "I have to go",
+        "good night",
+        "farewell",
+        "catch you later",
+        "quit",
+        "exit",
+        "i am leaving now",
+        "i have to go now",
+        "i am leaving",
+        "gn",
+        "gud night",
+        "tata",
+        "ok bye",
+        "bye bye",
+        "byee",
+        "cya",
+        "ttyl",
+        "alvida",
+        "see ya"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you later!",
+        "Bye! Come back any time."
+      ]
+    },
+    {
+      "tag": "nlp",
+      "patterns": [
+        "what is nlp",
+        "explain nlp",
+        "tell me about nlp",
+        "what is natural language processing",
+        "define natural language processing",
+        "nlp meaning",
+        "what does nlp stand for",
+        "natural language processing",
+        "nlp"
+      ],
+      "responses": [
+        "NLP (Natural Language Processing) is a field of AI that helps computers read, understand and generate human language. Chatbots, translators and search engines all use it."
+      ]
+    },
+    {
+      "tag": "nltk",
+      "patterns": [
+        "what is nltk",
+        "explain nltk",
+        "tell me about nltk",
+        "what is the natural language toolkit",
+        "nltk library",
+        "what does nltk do",
+        "nltk meaning",
+        "nltk",
+        "natural language toolkit"
+      ],
+      "responses": [
+        "NLTK is the Natural Language Toolkit, a popular Python library for text processing: tokenizing, stemming, tagging, parsing and more. This bot uses its tokenizer and Porter stemmer."
+      ]
+    },
+    {
+      "tag": "tfidf",
+      "patterns": [
+        "what is tf idf",
+        "what is tfidf",
+        "explain tf idf",
+        "explain tfidf",
+        "tell me about tf idf",
+        "tf idf meaning",
+        "how does tf idf work",
+        "what does tf idf mean",
+        "term frequency inverse document frequency",
+        "tf idf",
+        "tfidf"
+      ],
+      "responses": [
+        "TF-IDF (Term Frequency - Inverse Document Frequency) scores how important a word is to a text compared with a whole collection. Common words get low weights and distinctive words get high weights, which makes it great for matching sentences."
+      ]
+    },
+    {
+      "tag": "cosine",
+      "patterns": [
+        "what is cosine similarity",
+        "explain cosine similarity",
+        "how do you compare sentences",
+        "how do you match my message",
+        "cosine similarity meaning",
+        "how does similarity work",
+        "cosine",
+        "cosine similarity"
+      ],
+      "responses": [
+        "Cosine similarity measures the angle between two vectors. A score of 1 means the sentences point in the same direction (very similar) and 0 means they share nothing. I use it to compare your message with my known patterns."
+      ]
+    },
+    {
+      "tag": "how_it_works",
+      "patterns": [
+        "how do you work",
+        "how does this chatbot work",
+        "how do you understand me",
+        "how were you built",
+        "how do you work internally",
+        "explain how you work",
+        "how does this bot work",
+        "what technology do you use",
+        "what are you made of",
+        "how it works",
+        "how does this bot understand text"
+      ],
+      "responses": [
+        "I clean your text (lowercase, tokenize, remove stop words, stem), turn it into a TF-IDF vector, and compare it with all my example patterns using cosine similarity. The best match above a threshold decides my reply."
+      ]
+    },
+    {
+      "tag": "flask",
+      "patterns": [
+        "what is flask",
+        "explain flask",
+        "tell me about flask",
+        "flask framework",
+        "what does flask do",
+        "what is a flask app",
+        "flask"
+      ],
+      "responses": [
+        "Flask is a lightweight Python web framework. It serves this chat page and the /chat endpoint that sends your messages to me."
+      ]
+    },
+    {
+      "tag": "python",
+      "patterns": [
+        "what is python",
+        "explain python",
+        "tell me about python",
+        "why python",
+        "python programming language",
+        "is python good",
+        "what is python used for",
+        "python",
+        "which language are you written in",
+        "what language is this bot written in"
+      ],
+      "responses": [
+        "Python is a popular, easy-to-read programming language used for web development, data science, automation and AI."
+      ]
+    },
+    {
+      "tag": "machine_learning",
+      "patterns": [
+        "what is machine learning",
+        "explain machine learning",
+        "tell me about machine learning",
+        "define machine learning",
+        "what is ml",
+        "machine learning meaning",
+        "machine learning",
+        "ml"
+      ],
+      "responses": [
+        "Machine learning is a way of building software that learns patterns from data instead of following only hand-written rules."
+      ]
+    },
+    {
+      "tag": "ai",
+      "patterns": [
+        "what is ai",
+        "what is artificial intelligence",
+        "explain artificial intelligence",
+        "tell me about ai",
+        "define artificial intelligence",
+        "ai meaning",
+        "ai",
+        "artificial intelligence"
+      ],
+      "responses": [
+        "Artificial Intelligence is the field of building systems that perform tasks that normally need human intelligence, such as understanding language, recognising images and making decisions."
+      ]
+    },
+    {
+      "tag": "chatbot",
+      "patterns": [
+        "what is a chatbot",
+        "explain chatbot",
+        "tell me about chatbots",
+        "define chatbot",
+        "what does a chatbot do",
+        "chatbot meaning",
+        "chatbot",
+        "chatbots"
+      ],
+      "responses": [
+        "A chatbot is a program that holds a conversation with people through text or voice. Simple ones, like me, match your message to known intents; advanced ones use large language models."
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you",
+        "what is your age",
+        "when were you born",
+        "when were you created",
+        "your age",
+        "are you old",
+        "age",
+        "how long ago were you made",
+        "when were you made"
+      ],
+      "responses": [
+        "I don't have a birthday, but I get re-born every time the server starts!",
+        "Age is just a number, and mine is zero-point-something."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what is the weather",
+        "what's the weather like",
+        "is it raining",
+        "how is the weather today",
+        "weather forecast",
+        "will it rain today",
+        "is it sunny",
+        "what is the temperature",
+        "weather"
+      ],
+      "responses": [
+        "I can't look up live weather, since I have no internet access. A weather app or website will do much better!"
+      ]
+    },
+    {
+      "tag": "love",
+      "patterns": [
+        "do you love me",
+        "I love you",
+        "are you my friend",
+        "will you be my friend",
+        "do you like me",
+        "I like you",
+        "can we be friends",
+        "i really like you",
+        "i like you"
+      ],
+      "responses": [
+        "That's sweet! I'm a chatbot, but I'm always happy to chat with you.",
+        "Aww, thanks! You're a great conversation partner."
+      ]
+    },
+    {
+      "tag": "human",
+      "patterns": [
+        "are you a robot",
+        "are you human",
+        "are you real",
+        "are you a bot",
+        "are you a person",
+        "are you alive",
+        "are you an AI",
+        "human",
+        "are you a machine",
+        "are you a computer program"
+      ],
+      "responses": [
+        "I'm a chatbot, a program running on your computer. Not human, but friendly!"
+      ]
+    },
+    {
+      "tag": "python_install",
+      "patterns": [
+        "how to install python",
+        "install python",
+        "python download",
+        "how do i download python",
+        "python setup",
+        "where can i get python",
+        "python installation steps"
+      ],
+      "responses": [
+        "Download Python from python.org/downloads, run the installer and tick \"Add Python to PATH\". Check it with: python --version"
+      ]
+    },
+    {
+      "tag": "python_variables",
+      "patterns": [
+        "what is a variable in python",
+        "python variables",
+        "how to declare a variable",
+        "what are variables",
+        "variable meaning",
+        "python data types",
+        "what are data types in python",
+        "int float str bool"
+      ],
+      "responses": [
+        "A variable is a name that stores a value. Python figures out the type itself.\nx = 10 (int)\nprice = 9.5 (float)\nname = \"Sam\" (str)\nok = True (bool)\nCheck a type with type(x)."
+      ]
+    },
+    {
+      "tag": "python_list",
+      "patterns": [
+        "what is a list in python",
+        "python list",
+        "how to use list in python",
+        "list methods in python",
+        "append in python",
+        "python list example",
+        "explain python lists",
+        "what is list"
+      ],
+      "responses": [
+        "A list is an ordered, changeable collection.\nnums = [1, 2, 3]\nnums.append(4) adds an item\nnums[0] gets the first item\nUseful methods: append, remove, pop, sort, reverse, len()."
+      ]
+    },
+    {
+      "tag": "python_tuple",
+      "patterns": [
+        "what is a tuple in python",
+        "python tuple",
+        "tuple vs list",
+        "difference between list and tuple",
+        "explain tuple",
+        "tuple meaning",
+        "are tuples immutable"
+      ],
+      "responses": [
+        "A tuple is like a list but immutable (cannot be changed after creation): t = (1, 2, 3). Use tuples for fixed data; they are slightly faster and can be dictionary keys."
+      ]
+    },
+    {
+      "tag": "python_dict",
+      "patterns": [
+        "what is a dictionary in python",
+        "python dictionary",
+        "python dict",
+        "how to use dict in python",
+        "key value pairs in python",
+        "explain dictionary",
+        "dictionary example python",
+        "what is dict"
+      ],
+      "responses": [
+        "A dictionary stores key-value pairs.\nstudent = {\"name\": \"Asha\", \"age\": 20}\nstudent[\"name\"] gets a value\nstudent.get(\"age\") is a safe lookup\nMethods: keys(), values(), items()."
+      ]
+    },
+    {
+      "tag": "python_set",
+      "patterns": [
+        "what is a set in python",
+        "python set",
+        "set in python",
+        "unique values in python",
+        "remove duplicates from list",
+        "explain python sets",
+        "set operations union intersection"
+      ],
+      "responses": [
+        "A set is an unordered collection of unique items: s = set([1, 2, 2, 3]) becomes 1, 2, 3. It supports union, intersection and difference. Quick trick to remove duplicates: list(set(my_list))."
+      ]
+    },
+    {
+      "tag": "python_loops",
+      "patterns": [
+        "what is a for loop",
+        "for loop in python",
+        "while loop in python",
+        "python loops",
+        "how to use loops",
+        "explain loops",
+        "difference between for and while loop",
+        "what is a loop",
+        "break and continue"
+      ],
+      "responses": [
+        "Loops repeat code.\nfor i in range(5): print(i) runs 5 times.\nwhile x < 10: x += 1 runs while the condition is true.\nbreak stops a loop, continue skips to the next round."
+      ]
+    },
+    {
+      "tag": "python_conditions",
+      "patterns": [
+        "what is if else in python",
+        "python if statement",
+        "if elif else",
+        "conditional statements",
+        "how to use if else",
+        "explain conditions in python",
+        "what is a conditional"
+      ],
+      "responses": [
+        "Conditions run code only when something is true.\nif marks >= 40: print(\"pass\")\nelif marks >= 35: print(\"grace\")\nelse: print(\"fail\")\nIndentation (4 spaces) is required."
+      ]
+    },
+    {
+      "tag": "python_functions",
+      "patterns": [
+        "what is a function in python",
+        "python functions",
+        "how to define a function",
+        "def in python",
+        "explain functions",
+        "what is return in python",
+        "function parameters and arguments",
+        "what is a function",
+        "create a function in python",
+        "how to create a function"
+      ],
+      "responses": [
+        "A function is a reusable block of code.\ndef add(a, b):\n    return a + b\nCall it with add(2, 3). Parameters are the names in the definition; arguments are the values you pass."
+      ]
+    },
+    {
+      "tag": "python_lambda",
+      "patterns": [
+        "what is lambda in python",
+        "lambda function",
+        "python lambda example",
+        "anonymous function",
+        "what are map filter reduce",
+        "map and filter in python"
+      ],
+      "responses": [
+        "A lambda is a small one-line anonymous function: square = lambda x: x * x. It is often used with map(), filter() and sorted(key=...)."
+      ]
+    },
+    {
+      "tag": "python_oop",
+      "patterns": [
+        "what is a class in python",
+        "python classes and objects",
+        "what is oop",
+        "explain object oriented programming",
+        "what is an object",
+        "oops concepts",
+        "four pillars of oop",
+        "what is self in python",
+        "what is init in python"
+      ],
+      "responses": [
+        "OOP organises code into classes (blueprints) and objects (instances). Four pillars: Encapsulation, Abstraction, Inheritance, Polymorphism.\nclass Dog:\n    def __init__(self, name):\n        self.name = name\n`self` refers to the current object."
+      ]
+    },
+    {
+      "tag": "inheritance",
+      "patterns": [
+        "what is inheritance",
+        "inheritance in python",
+        "explain inheritance",
+        "parent class and child class",
+        "what is polymorphism",
+        "what is encapsulation",
+        "what is abstraction",
+        "method overriding"
+      ],
+      "responses": [
+        "Inheritance lets a child class reuse a parent class: class Dog(Animal). Polymorphism means the same method name behaves differently per class (overriding). Encapsulation hides data inside a class; abstraction hides complexity."
+      ]
+    },
+    {
+      "tag": "python_exceptions",
+      "patterns": [
+        "what is exception handling",
+        "try except in python",
+        "python error handling",
+        "how to handle errors in python",
+        "what is try catch",
+        "explain try except finally",
+        "what is an exception",
+        "raise exception python"
+      ],
+      "responses": [
+        "Exception handling stops a program from crashing on errors.\ntry:\n    x = 10 / 0\nexcept ZeroDivisionError:\n    print(\"cannot divide by zero\")\nfinally:\n    print(\"always runs\")"
+      ]
+    },
+    {
+      "tag": "python_files",
+      "patterns": [
+        "how to read a file in python",
+        "python file handling",
+        "how to write to a file",
+        "open function in python",
+        "read and write files",
+        "what is with open",
+        "file handling"
+      ],
+      "responses": [
+        "Use `with` so the file closes automatically.\nwith open(\"a.txt\", \"r\") as f:\n    data = f.read()\nModes: r read, w write (overwrites), a append."
+      ]
+    },
+    {
+      "tag": "python_modules",
+      "patterns": [
+        "what is a module in python",
+        "what is pip",
+        "how to install a library in python",
+        "pip install",
+        "what is a package in python",
+        "python import",
+        "import statement",
+        "what is pypi"
+      ],
+      "responses": [
+        "A module is a .py file you can import (import math). A package is a folder of modules. Install third-party libraries with pip, e.g. pip install requests. Packages come from PyPI."
+      ]
+    },
+    {
+      "tag": "virtualenv",
+      "patterns": [
+        "what is a virtual environment",
+        "python venv",
+        "how to create virtual environment",
+        "virtualenv in python",
+        "why use venv",
+        "what is requirements txt",
+        "pip freeze"
+      ],
+      "responses": [
+        "A virtual environment keeps each project's libraries separate.\npython -m venv .venv\nActivate it (Windows: .venv\\Scripts\\activate). Save libraries with pip freeze > requirements.txt and restore with pip install -r requirements.txt."
+      ]
+    },
+    {
+      "tag": "list_comprehension",
+      "patterns": [
+        "what is list comprehension",
+        "list comprehension in python",
+        "python comprehension example",
+        "explain list comprehension",
+        "what is a comprehension",
+        "one line for loop"
+      ],
+      "responses": [
+        "A list comprehension builds a list in one line: squares = [x*x for x in range(5)] gives 0, 1, 4, 9, 16. Add a filter: [x for x in nums if x % 2 == 0]."
+      ]
+    },
+    {
+      "tag": "decorators",
+      "patterns": [
+        "what is a decorator in python",
+        "python decorators",
+        "explain decorators",
+        "what is a generator in python",
+        "what is yield",
+        "what are generators",
+        "iterator vs generator"
+      ],
+      "responses": [
+        "A decorator wraps a function to add behaviour (written as @name above the function). A generator uses `yield` to produce values one at a time, saving memory. Both are intermediate Python topics."
+      ]
+    },
+    {
+      "tag": "python_strings",
+      "patterns": [
+        "what is a string in python",
+        "python string methods",
+        "string slicing",
+        "how to reverse a string in python",
+        "what is an f string",
+        "string formatting in python",
+        "python strings"
+      ],
+      "responses": [
+        "Strings are text in quotes. Handy ones: upper(), lower(), strip(), split(), replace(), len().\nSlice with s[0:3]; reverse with s[::-1].\nF-string: name = \"Sam\"; print(f\"Hello {name}\")"
+      ]
+    },
+    {
+      "tag": "python_vs",
+      "patterns": [
+        "is python compiled or interpreted",
+        "is python interpreted",
+        "python is interpreted or compiled",
+        "is python object oriented",
+        "is python case sensitive",
+        "is python dynamically typed",
+        "what is dynamic typing"
+      ],
+      "responses": [
+        "Python is interpreted, dynamically typed, case-sensitive and supports object-oriented, functional and procedural styles."
+      ]
+    },
+    {
+      "tag": "python_libraries",
+      "patterns": [
+        "python libraries for data science",
+        "best python libraries",
+        "popular python libraries",
+        "important python modules",
+        "which library should i learn",
+        "python frameworks list",
+        "best libraries for python",
+        "top python libraries"
+      ],
+      "responses": [
+        "Popular libraries: NumPy and Pandas (data), Matplotlib and Seaborn (plots), scikit-learn (ML), TensorFlow and PyTorch (deep learning), Flask and Django (web), Requests (APIs), BeautifulSoup (scraping), NLTK and spaCy (NLP)."
+      ]
+    },
+    {
+      "tag": "numpy",
+      "patterns": [
+        "what is numpy",
+        "numpy array",
+        "numpy in python",
+        "explain numpy",
+        "why use numpy",
+        "numpy vs list"
+      ],
+      "responses": [
+        "NumPy is the core library for fast numerical computing. Its ndarray is much faster than a Python list for maths. import numpy as np; a = np.array([1, 2, 3])."
+      ]
+    },
+    {
+      "tag": "pandas",
+      "patterns": [
+        "what is pandas",
+        "pandas dataframe",
+        "pandas in python",
+        "explain pandas",
+        "what is a dataframe",
+        "read csv in python",
+        "pandas library"
+      ],
+      "responses": [
+        "Pandas is the data-analysis library. A DataFrame is a table of rows and columns. import pandas as pd; df = pd.read_csv(\"data.csv\"); df.head() shows the first rows."
+      ]
+    },
+    {
+      "tag": "matplotlib",
+      "patterns": [
+        "what is matplotlib",
+        "matplotlib in python",
+        "how to plot graph in python",
+        "data visualization in python",
+        "what is seaborn",
+        "plot a chart python",
+        "how do i draw a graph",
+        "draw a graph in python",
+        "plot graph"
+      ],
+      "responses": [
+        "Matplotlib draws charts in Python: import matplotlib.pyplot as plt; plt.plot([1, 2, 3]); plt.show(). Seaborn builds prettier statistical plots on top of it."
+      ]
+    },
+    {
+      "tag": "django",
+      "patterns": [
+        "what is django",
+        "django vs flask",
+        "django framework",
+        "flask or django",
+        "explain django",
+        "what is fastapi"
+      ],
+      "responses": [
+        "Django is a full-featured Python web framework (admin panel, ORM, auth built in). Flask is lighter and more flexible. FastAPI is a modern, fast framework for building APIs. Beginners often start with Flask."
+      ]
+    },
+    {
+      "tag": "deep_learning",
+      "patterns": [
+        "what is deep learning",
+        "what is a neural network",
+        "explain neural networks",
+        "what is tensorflow",
+        "what is pytorch",
+        "what is cnn",
+        "what is data science",
+        "difference between ai ml and deep learning",
+        "explain neural nets",
+        "neural net",
+        "neural networks"
+      ],
+      "responses": [
+        "Deep learning uses multi-layer neural networks to learn from large data (images, speech, text). TensorFlow and PyTorch are the main libraries. AI is the big field, ML is a part of AI, and deep learning is a part of ML."
+      ]
+    },
+    {
+      "tag": "programming",
+      "patterns": [
+        "what is programming",
+        "what is a programming language",
+        "how to start coding",
+        "how do i learn programming",
+        "coding for beginners",
+        "which programming language should i learn first",
+        "learn to code",
+        "what is a program",
+        "define programming",
+        "programming meaning",
+        "explain programming",
+        "what is computer programming",
+        "what does a program do",
+        "what is programming used for"
+      ],
+      "responses": [
+        "Programming is writing instructions a computer can follow. To start: pick one language (Python is great for beginners), learn basics (variables, loops, functions), then build small projects every week."
+      ]
+    },
+    {
+      "tag": "algorithm",
+      "patterns": [
+        "what is an algorithm",
+        "define algorithm",
+        "explain algorithm",
+        "algorithm meaning",
+        "what is a flowchart",
+        "what is pseudocode"
+      ],
+      "responses": [
+        "An algorithm is a step-by-step procedure to solve a problem. Pseudocode describes it in plain language, and a flowchart shows it with diagrams."
+      ]
+    },
+    {
+      "tag": "data_structure",
+      "patterns": [
+        "what is a data structure",
+        "data structures list",
+        "types of data structures",
+        "explain data structures",
+        "what is dsa",
+        "dsa meaning",
+        "why learn data structures"
+      ],
+      "responses": [
+        "A data structure is a way of organising data for efficient use. Common ones: array, linked list, stack, queue, hash table, tree, graph, heap. DSA = Data Structures and Algorithms, the base of coding interviews."
+      ]
+    },
+    {
+      "tag": "array",
+      "patterns": [
+        "what is an array",
+        "array vs linked list",
+        "explain array",
+        "what is a linked list",
+        "linked list explained",
+        "singly and doubly linked list"
+      ],
+      "responses": [
+        "An array stores items in contiguous memory with fast index access O(1) but slow insertion. A linked list stores nodes connected by pointers, with fast insertion but slow search O(n)."
+      ]
+    },
+    {
+      "tag": "stack_queue",
+      "patterns": [
+        "what is a stack",
+        "what is a queue",
+        "stack vs queue",
+        "explain stack and queue",
+        "lifo and fifo",
+        "what is push and pop",
+        "what is a deque",
+        "what is a priority queue"
+      ],
+      "responses": [
+        "Stack = LIFO (last in, first out), with push and pop; used in undo and recursion. Queue = FIFO (first in, first out), with enqueue and dequeue; used in scheduling and BFS."
+      ]
+    },
+    {
+      "tag": "tree_graph",
+      "patterns": [
+        "what is a tree in data structure",
+        "what is a binary tree",
+        "binary search tree",
+        "what is a graph in data structure",
+        "bfs and dfs",
+        "what is bfs",
+        "what is dfs",
+        "tree traversal",
+        "what is a heap"
+      ],
+      "responses": [
+        "A tree is a hierarchy of nodes; a binary tree has at most 2 children per node and a BST keeps left < root < right. A graph is nodes plus edges. BFS explores level by level (queue); DFS goes deep first (stack or recursion)."
+      ]
+    },
+    {
+      "tag": "hashing",
+      "patterns": [
+        "what is hashing",
+        "what is a hash table",
+        "hash map",
+        "what is a hash function",
+        "collision in hashing",
+        "explain hash table"
+      ],
+      "responses": [
+        "A hash table maps keys to values using a hash function, giving average O(1) lookup. When two keys land in the same slot it is a collision, handled by chaining or open addressing. Python dict is a hash table."
+      ]
+    },
+    {
+      "tag": "sorting",
+      "patterns": [
+        "what is sorting",
+        "sorting algorithms",
+        "bubble sort",
+        "merge sort",
+        "quick sort",
+        "insertion sort",
+        "selection sort",
+        "which sorting algorithm is best",
+        "explain bubble sort",
+        "how does quicksort work",
+        "quicksort",
+        "heap sort",
+        "sorting in python"
+      ],
+      "responses": [
+        "Sorting arranges data in order. Simple: bubble, selection, insertion (O(n^2)). Efficient: merge sort and quick sort (O(n log n)). In Python just use sorted() or list.sort()."
+      ]
+    },
+    {
+      "tag": "searching",
+      "patterns": [
+        "what is binary search",
+        "linear search",
+        "binary search algorithm",
+        "searching algorithms",
+        "linear vs binary search",
+        "explain binary search"
+      ],
+      "responses": [
+        "Linear search checks items one by one: O(n). Binary search halves a sorted list each step: O(log n). It needs sorted data."
+      ]
+    },
+    {
+      "tag": "recursion",
+      "patterns": [
+        "what is recursion",
+        "recursion in python",
+        "explain recursion",
+        "recursive function",
+        "base case",
+        "factorial using recursion",
+        "what is dynamic programming",
+        "what is memoization",
+        "greedy algorithm"
+      ],
+      "responses": [
+        "Recursion is a function calling itself, and it needs a base case to stop.\ndef fact(n):\n    return 1 if n <= 1 else n * fact(n - 1)\nDynamic programming stores sub-results (memoization) to avoid repeated work."
+      ]
+    },
+    {
+      "tag": "big_o",
+      "patterns": [
+        "what is time complexity",
+        "what is big o notation",
+        "big o",
+        "space complexity",
+        "explain time complexity",
+        "o of n",
+        "algorithm efficiency",
+        "what is o(1)"
+      ],
+      "responses": [
+        "Big O describes how running time or memory grows with input size n. O(1) constant, O(log n) binary search, O(n) one loop, O(n log n) good sorting, O(n^2) nested loops."
+      ]
+    },
+    {
+      "tag": "compiler_interpreter",
+      "patterns": [
+        "what is a compiler",
+        "what is an interpreter",
+        "compiler vs interpreter",
+        "difference between compiler and interpreter",
+        "what is machine code",
+        "what is bytecode",
+        "what is a jvm",
+        "what is source code"
+      ],
+      "responses": [
+        "A compiler translates the whole program to machine code before running (C, C++). An interpreter runs it line by line (Python). Java compiles to bytecode that the JVM runs."
+      ]
+    },
+    {
+      "tag": "debugging",
+      "patterns": [
+        "what is debugging",
+        "how to debug code",
+        "what is a bug",
+        "syntax error vs runtime error",
+        "types of errors in programming",
+        "what is a logical error",
+        "my code is not working",
+        "how do i fix errors in my code"
+      ],
+      "responses": [
+        "Debugging means finding and fixing bugs. Error types: syntax (wrong grammar), runtime (crashes while running), logical (wrong output). Tips: read the error message, add print statements, use a debugger, and test small parts."
+      ]
+    },
+    {
+      "tag": "api",
+      "patterns": [
+        "what is an api",
+        "rest api",
+        "what is rest",
+        "explain api",
+        "what is an endpoint",
+        "get and post request",
+        "what is json",
+        "json format",
+        "what is a web service"
+      ],
+      "responses": [
+        "An API lets programs talk to each other. A REST API uses HTTP methods (GET read, POST create, PUT update, DELETE remove) and usually returns JSON, a text format of key-value pairs."
+      ]
+    },
+    {
+      "tag": "oop_languages",
+      "patterns": [
+        "what is java",
+        "what is c programming",
+        "what is c plus plus",
+        "java vs python",
+        "c vs c++ vs java",
+        "which language is best",
+        "best programming language",
+        "difference between c and c++",
+        "what is javascript"
+      ],
+      "responses": [
+        "C is fast and low-level, C++ adds OOP, Java is portable and widely used in enterprise and Android, Python is easy and great for AI, JavaScript powers websites. The best language depends on your goal."
+      ]
+    },
+    {
+      "tag": "web_dev",
+      "patterns": [
+        "what is html",
+        "what is css",
+        "what is web development",
+        "frontend vs backend",
+        "what is full stack",
+        "what is react",
+        "what is node js",
+        "html css javascript",
+        "what is a framework"
+      ],
+      "responses": [
+        "Frontend = what users see (HTML structure, CSS styling, JavaScript behaviour, React). Backend = server logic and database (Python, Node.js, Java). A full-stack developer does both."
+      ]
+    },
+    {
+      "tag": "cse",
+      "patterns": [
+        "what is cse",
+        "computer science engineering",
+        "what is computer science",
+        "cse subjects",
+        "subjects in computer science",
+        "cse syllabus",
+        "what do cse students study",
+        "why choose cse",
+        "what is cs",
+        "cse full form",
+        "full form of cse",
+        "what is computer science and engineering",
+        "is cse a good branch",
+        "is cse hard",
+        "scope of cse",
+        "what is cse branch",
+        "cse meaning"
+      ],
+      "responses": [
+        "CSE (Computer Science and Engineering) covers programming, data structures, algorithms, DBMS, operating systems, computer networks, computer architecture, software engineering, AI/ML and theory of computation."
+      ]
+    },
+    {
+      "tag": "os",
+      "patterns": [
+        "what is an operating system",
+        "operating system functions",
+        "examples of operating system",
+        "what is os",
+        "types of operating system",
+        "what is a kernel",
+        "what is a shell",
+        "explain operating system"
+      ],
+      "responses": [
+        "An operating system manages hardware and software resources: processes, memory, files and devices. Examples: Windows, Linux, macOS, Android. The kernel is its core part."
+      ]
+    },
+    {
+      "tag": "process_thread",
+      "patterns": [
+        "process vs thread",
+        "what is a process",
+        "what is a thread",
+        "what is multithreading",
+        "what is multitasking",
+        "what is cpu scheduling",
+        "difference between process and thread",
+        "what is context switching"
+      ],
+      "responses": [
+        "A process is a running program with its own memory. A thread is a lightweight unit inside a process that shares memory. Scheduling decides which process gets the CPU, and a context switch saves and restores its state."
+      ]
+    },
+    {
+      "tag": "deadlock",
+      "patterns": [
+        "what is deadlock",
+        "deadlock in os",
+        "conditions for deadlock",
+        "what is a semaphore",
+        "what is a mutex",
+        "race condition",
+        "what is synchronization",
+        "what is starvation"
+      ],
+      "responses": [
+        "Deadlock is when processes wait for each other forever. Four conditions: mutual exclusion, hold and wait, no preemption, circular wait. Semaphores and mutexes control access to shared resources and prevent race conditions."
+      ]
+    },
+    {
+      "tag": "memory_mgmt",
+      "patterns": [
+        "what is virtual memory",
+        "what is paging",
+        "what is segmentation",
+        "page replacement",
+        "what is memory management",
+        "what is cache memory",
+        "what is thrashing",
+        "difference between ram and rom"
+      ],
+      "responses": [
+        "Memory management allocates RAM to processes. Paging splits memory into fixed-size pages; segmentation uses logical parts. Virtual memory uses disk to extend RAM. Cache is small, very fast memory near the CPU. RAM is volatile, ROM is permanent."
+      ]
+    },
+    {
+      "tag": "dbms",
+      "patterns": [
+        "what is dbms",
+        "what is a database",
+        "database management system",
+        "what is rdbms",
+        "dbms vs rdbms",
+        "what is a primary key",
+        "what is a foreign key",
+        "types of keys in dbms",
+        "what is er diagram"
+      ],
+      "responses": [
+        "A database stores organised data and a DBMS manages it. RDBMS stores data in tables. Primary key uniquely identifies a row; foreign key links to another table. An ER diagram shows entities and their relationships."
+      ]
+    },
+    {
+      "tag": "sql",
+      "patterns": [
+        "what is sql",
+        "sql commands",
+        "sql queries",
+        "select statement",
+        "what is a join in sql",
+        "types of joins",
+        "ddl dml dcl",
+        "sql vs nosql",
+        "what is a group by",
+        "basic sql syntax"
+      ],
+      "responses": [
+        "SQL is the language for relational databases. SELECT * FROM students WHERE age > 18; reads data. Groups: DDL (CREATE, ALTER, DROP), DML (INSERT, UPDATE, DELETE), DCL (GRANT, REVOKE). JOINs combine tables: INNER, LEFT, RIGHT, FULL."
+      ]
+    },
+    {
+      "tag": "normalization",
+      "patterns": [
+        "what is normalization",
+        "normal forms",
+        "1nf 2nf 3nf",
+        "what is bcnf",
+        "explain normalization",
+        "why normalization",
+        "what is denormalization",
+        "what is acid property",
+        "what is a transaction"
+      ],
+      "responses": [
+        "Normalization organises tables to remove redundancy: 1NF (atomic values), 2NF (no partial dependency), 3NF (no transitive dependency), BCNF (stricter). ACID = Atomicity, Consistency, Isolation, Durability for safe transactions."
+      ]
+    },
+    {
+      "tag": "nosql",
+      "patterns": [
+        "what is mongodb",
+        "what is nosql",
+        "what is mysql",
+        "what is postgresql",
+        "what is firebase",
+        "what is sqlite",
+        "which database should i use",
+        "what is redis"
+      ],
+      "responses": [
+        "MySQL, PostgreSQL and SQLite are relational (SQL) databases. MongoDB is a NoSQL document database storing JSON-like data. Redis is a very fast in-memory store. SQLite is built into Python and perfect for small projects."
+      ]
+    },
+    {
+      "tag": "networking",
+      "patterns": [
+        "what is computer network",
+        "what is networking",
+        "types of network",
+        "lan wan man",
+        "what is a router",
+        "what is a switch",
+        "what is topology",
+        "network devices",
+        "what is a protocol"
+      ],
+      "responses": [
+        "A computer network connects devices to share data. Types: LAN (local), MAN (city), WAN (wide, like the internet). Devices: router, switch, hub, modem. A protocol is a set of communication rules."
+      ]
+    },
+    {
+      "tag": "osi",
+      "patterns": [
+        "what is osi model",
+        "osi layers",
+        "7 layers of osi",
+        "tcp ip model",
+        "osi vs tcp ip",
+        "what is tcp",
+        "what is udp",
+        "tcp vs udp"
+      ],
+      "responses": [
+        "OSI has 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, Application. TCP/IP has 4. TCP is reliable and ordered (web, email); UDP is faster but unreliable (video calls, games)."
+      ]
+    },
+    {
+      "tag": "internet",
+      "patterns": [
+        "what is http",
+        "http vs https",
+        "what is dns",
+        "what is an ip address",
+        "what is a url",
+        "how does the internet work",
+        "what is a web server",
+        "what is a domain name",
+        "what is a port",
+        "what is a browser",
+        "what is internet",
+        "what is the internet",
+        "what is www",
+        "what is world wide web",
+        "what is wifi"
+      ],
+      "responses": [
+        "HTTP is the web's protocol (HTTPS adds encryption). DNS turns domain names into IP addresses. An IP address identifies a device. A web server delivers pages to your browser when you open a URL."
+      ]
+    },
+    {
+      "tag": "cloud",
+      "patterns": [
+        "what is cloud computing",
+        "aws azure gcp",
+        "what is aws",
+        "iaas paas saas",
+        "what is a server",
+        "what is hosting",
+        "what is deployment",
+        "what is render",
+        "what is serverless"
+      ],
+      "responses": [
+        "Cloud computing rents computing power over the internet (AWS, Azure, Google Cloud). IaaS = infrastructure, PaaS = platform (Render, Heroku), SaaS = software (Gmail). Deployment means putting your app online."
+      ]
+    },
+    {
+      "tag": "security",
+      "patterns": [
+        "what is cyber security",
+        "what is encryption",
+        "what is a firewall",
+        "what is hacking",
+        "what is a virus",
+        "what is phishing",
+        "what is a vpn",
+        "symmetric and asymmetric encryption",
+        "what is cryptography",
+        "what is malware"
+      ],
+      "responses": [
+        "Cybersecurity protects systems and data. Encryption scrambles data so only key holders can read it (symmetric = one key, asymmetric = public and private keys). A firewall filters network traffic; phishing tricks people into giving secrets."
+      ]
+    },
+    {
+      "tag": "blockchain",
+      "patterns": [
+        "what is blockchain",
+        "what is bitcoin",
+        "what is cryptocurrency",
+        "what is iot",
+        "internet of things",
+        "what is big data",
+        "what is quantum computing",
+        "what is ar and vr",
+        "what is edge computing"
+      ],
+      "responses": [
+        "Blockchain is a shared, tamper-resistant ledger of linked blocks (used by Bitcoin). IoT connects everyday devices to the internet. Big data means datasets too large for normal tools. Quantum computing uses qubits."
+      ]
+    },
+    {
+      "tag": "architecture",
+      "patterns": [
+        "what is cpu",
+        "what is computer architecture",
+        "what is alu",
+        "what is a register",
+        "von neumann architecture",
+        "fetch decode execute",
+        "what is a processor",
+        "what is pipelining",
+        "what is gpu",
+        "risc vs cisc"
+      ],
+      "responses": [
+        "The CPU runs instructions using the ALU (maths and logic), control unit and registers, following the fetch-decode-execute cycle. A GPU handles many parallel tasks (graphics, AI). RISC uses simple instructions, CISC uses complex ones."
+      ]
+    },
+    {
+      "tag": "binary",
+      "patterns": [
+        "what is binary",
+        "binary number system",
+        "how to convert decimal to binary",
+        "what is a bit and byte",
+        "number systems",
+        "what is hexadecimal",
+        "what is boolean algebra",
+        "what are logic gates",
+        "and or not gate"
+      ],
+      "responses": [
+        "Computers use binary (0 and 1). 8 bits = 1 byte. Decimal 5 is binary 101. Hexadecimal is base 16. Logic gates (AND, OR, NOT, XOR) combine bits and are the building blocks of circuits. In Python: bin(5)."
+      ]
+    },
+    {
+      "tag": "software_eng",
+      "patterns": [
+        "what is software engineering",
+        "what is sdlc",
+        "software development life cycle",
+        "what is agile",
+        "waterfall model",
+        "what is devops",
+        "what is ci cd",
+        "what is testing",
+        "what is unit testing",
+        "what is scrum"
+      ],
+      "responses": [
+        "Software engineering is building software systematically. SDLC phases: requirements, design, coding, testing, deployment, maintenance. Models: Waterfall (step by step) and Agile/Scrum (short iterations). DevOps and CI/CD automate build, test and release."
+      ]
+    },
+    {
+      "tag": "toc",
+      "patterns": [
+        "what is toc",
+        "theory of computation",
+        "what is automata",
+        "what is dfa",
+        "what is a turing machine",
+        "what is compiler design",
+        "what is lexical analysis",
+        "what is discrete mathematics"
+      ],
+      "responses": [
+        "Theory of Computation studies what computers can solve: finite automata (DFA/NFA), grammars, pushdown automata and Turing machines. Compiler design covers lexical analysis, parsing, and code generation."
+      ]
+    },
+    {
+      "tag": "git",
+      "patterns": [
+        "what is git",
+        "git commands",
+        "how to use git",
+        "git commit",
+        "git push and pull",
+        "what is a git branch",
+        "git clone",
+        "git init",
+        "git vs github",
+        "basic git workflow"
+      ],
+      "responses": [
+        "Git tracks changes in your code. Workflow:\ngit init\ngit add .\ngit commit -m \"message\"\ngit push\nOther: git clone, git pull, git branch, git merge, git status."
+      ]
+    },
+    {
+      "tag": "github",
+      "patterns": [
+        "what is github",
+        "how to upload project to github",
+        "what is a repository",
+        "what is a pull request",
+        "how to create a repo",
+        "what is fork",
+        "github pages",
+        "what is gitlab"
+      ],
+      "responses": [
+        "GitHub hosts Git repositories online for backup, sharing and teamwork. Create a repo, then push your code. Pull request = ask to merge your changes; fork = your own copy of someone's repo."
+      ]
+    },
+    {
+      "tag": "vscode",
+      "patterns": [
+        "what is visual studio code",
+        "best code editor",
+        "vs code vs pycharm",
+        "what is an ide",
+        "best ide for python",
+        "what is pycharm",
+        "what is a code editor",
+        "what is jupyter notebook",
+        "what is google colab",
+        "what is anaconda",
+        "vscode",
+        "vs code editor"
+      ],
+      "responses": [
+        "Editors and IDEs: VS Code (light, popular), PyCharm (full Python IDE), Jupyter Notebook and Google Colab (run code in cells, great for data science and ML), Anaconda (Python plus data-science tools in one installer)."
+      ]
+    },
+    {
+      "tag": "terminal",
+      "patterns": [
+        "what is terminal",
+        "what is command line",
+        "what is cmd",
+        "basic linux commands",
+        "what is linux",
+        "what is bash",
+        "ls cd mkdir",
+        "how to use command prompt",
+        "what is ubuntu",
+        "what is powershell"
+      ],
+      "responses": [
+        "The terminal runs text commands. Basics: cd (change folder), ls or dir (list files), mkdir (new folder), rm (delete), cp (copy), pwd (where am I). Linux is a free, open-source OS popular for servers."
+      ]
+    },
+    {
+      "tag": "docker",
+      "patterns": [
+        "what is docker",
+        "what is a container",
+        "docker vs virtual machine",
+        "what is kubernetes",
+        "what is a docker image",
+        "what is a virtual machine",
+        "explain docker",
+        "what is containerization"
+      ],
+      "responses": [
+        "Docker packages an app with everything it needs into a container so it runs the same anywhere. A virtual machine includes a full OS, so containers are lighter. Kubernetes manages many containers."
+      ]
+    },
+    {
+      "tag": "dev_tools",
+      "patterns": [
+        "what is postman",
+        "what is stack overflow",
+        "what is chatgpt",
+        "what is copilot",
+        "tools used by programmers",
+        "developer tools",
+        "what is npm",
+        "what is a package manager",
+        "what is an sdk",
+        "what is open source"
+      ],
+      "responses": [
+        "Handy developer tools: Postman (test APIs), Git and GitHub (version control), Stack Overflow (answers to coding questions), npm and pip (package managers), Docker (containers), AI assistants like Claude and Copilot (help write and explain code)."
+      ]
+    },
+    {
+      "tag": "project_tools",
+      "patterns": [
+        "what tools does this chatbot use",
+        "tools used in this project",
+        "which libraries are used in chatbot",
+        "technologies used in this project",
+        "what is the tech stack",
+        "what is gunicorn",
+        "what is render com",
+        "what is scikit learn",
+        "what is sklearn"
+      ],
+      "responses": [
+        "This project uses Python, NLTK (tokenizing and stemming), scikit-learn (TF-IDF and cosine similarity), Flask (web app), Gunicorn (production server), GitHub (code) and Render (hosting). scikit-learn is Python's main machine-learning library."
+      ]
+    },
+    {
+      "tag": "roadmap",
+      "patterns": [
+        "python roadmap",
+        "how to become a programmer",
+        "how to become a software engineer",
+        "roadmap for cse students",
+        "how to learn python fast",
+        "how to learn dsa",
+        "how to get a job in it",
+        "what skills do i need",
+        "how to become a data scientist"
+      ],
+      "responses": [
+        "Roadmap: 1) Learn Python basics. 2) Practice DSA daily. 3) Learn Git, SQL and one framework. 4) Build 3 to 5 projects and upload them to GitHub. 5) Learn system basics (OS, DBMS, networks). 6) Practice interview questions and apply for internships."
+      ]
+    },
+    {
+      "tag": "practice",
+      "patterns": [
+        "where to practice coding",
+        "best websites to learn coding",
+        "leetcode",
+        "hackerrank",
+        "coding practice sites",
+        "competitive programming",
+        "how to prepare for coding interviews",
+        "codeforces",
+        "geeksforgeeks",
+        "free resources to learn programming"
+      ],
+      "responses": [
+        "Practice on LeetCode, HackerRank, CodeChef and Codeforces. Learn from GeeksforGeeks, freeCodeCamp, W3Schools, CS50 and the official Python docs. Solve at least one problem daily."
+      ]
+    },
+    {
+      "tag": "project_ideas",
+      "patterns": [
+        "project ideas for cse students",
+        "python project ideas",
+        "mini project ideas",
+        "final year project ideas",
+        "give me a project idea",
+        "beginner projects",
+        "what project should i make",
+        "ai project ideas"
+      ],
+      "responses": [
+        "Project ideas: to-do app, calculator, quiz game, weather app (API), expense tracker, student management system (SQL), chatbot, sentiment analyzer, face detection, house price predictor, and a portfolio website."
+      ]
+    },
+    {
+      "tag": "career",
+      "patterns": [
+        "what jobs can i get after cse",
+        "career options in computer science",
+        "software developer salary",
+        "what is a data analyst",
+        "what is machine learning engineer",
+        "what is internship",
+        "what is placement preparation",
+        "what is aptitude test",
+        "how to write a resume for it job",
+        "what jobs are there for cse students",
+        "jobs for cse students",
+        "job roles in it"
+      ],
+      "responses": [
+        "After CSE: software developer, web developer, data analyst, data scientist, ML engineer, DevOps engineer, cybersecurity analyst, cloud engineer, QA tester. Build projects, a GitHub profile and a clean resume to stand out."
+      ]
+    },
+    {
+      "tag": "coding",
+      "patterns": [
+        "what is code",
+        "what is a code",
+        "what is coding",
+        "code",
+        "coding",
+        "what does code mean",
+        "meaning of code",
+        "define code",
+        "define coding",
+        "explain coding",
+        "explain code",
+        "what do you mean by coding",
+        "what is code in computer",
+        "coding meaning",
+        "what exactly is coding",
+        "tell me about coding"
+      ],
+      "responses": [
+        "Code is a set of instructions written in a programming language that tells a computer what to do. Coding is the act of writing that code, for example:\nprint(\"Hello, world!\")\nThe computer reads these instructions and follows them step by step. Every app, website and game you use is built from code."
+      ]
+    },
+    {
+      "tag": "why_coding",
+      "patterns": [
+        "why is coding necessary",
+        "why coding is important",
+        "why learn coding",
+        "importance of coding",
+        "why should i learn programming",
+        "benefits of coding",
+        "is coding useful",
+        "scope of coding",
+        "why do we need programming",
+        "why is programming important",
+        "why coding is necessary",
+        "advantages of learning to code",
+        "is coding worth learning",
+        "why should i learn to code",
+        "future of coding",
+        "why we need coding"
+      ],
+      "responses": [
+        "Coding is necessary because almost everything today runs on software: phones, banking, hospitals, cars, games and websites. Learning it helps you:\n1) Solve problems logically.\n2) Build your own apps, sites and tools.\n3) Automate boring work.\n4) Get well-paid jobs in almost every industry.\n5) Understand and shape the technology around you."
+      ]
+    },
+    {
+      "tag": "coding_vs_programming",
+      "patterns": [
+        "difference between coding and programming",
+        "coding vs programming",
+        "programming vs coding",
+        "is coding same as programming",
+        "coding or programming",
+        "coder vs programmer",
+        "programmer vs developer",
+        "programmer vs software engineer"
+      ],
+      "responses": [
+        "Coding is writing instructions in a language. Programming is bigger: it includes understanding the problem, designing a solution (algorithm), coding it, testing and debugging. Coding is one step of programming. In everyday talk, people use the two words almost interchangeably."
+      ]
+    },
+    {
+      "tag": "coding_hard",
+      "patterns": [
+        "is coding hard",
+        "is programming difficult",
+        "can anyone learn coding",
+        "can i learn coding without maths",
+        "do i need maths for coding",
+        "how long does it take to learn coding",
+        "am i too old to learn coding",
+        "is coding easy",
+        "is programming hard to learn",
+        "can a beginner learn programming",
+        "do i need a laptop to learn coding",
+        "is coding only for engineers",
+        "can non it students learn coding",
+        "how many months to learn programming",
+        "is coding boring",
+        "is learning to code difficult",
+        "is learning to code hard",
+        "is learning programming difficult"
+      ],
+      "responses": [
+        "Coding feels hard at first, but anyone can learn it with regular practice. You only need basic logic, not advanced maths (except for fields like AI or graphics). Expect around 3 to 6 months of daily practice to get comfortable with the basics. Start small, build tiny projects and don't fear errors; every programmer sees them daily."
+      ]
+    },
+    {
+      "tag": "programmer_role",
+      "patterns": [
+        "who is a programmer",
+        "what does a programmer do",
+        "who is a software developer",
+        "what is a coder",
+        "software developer job role",
+        "what is a full stack developer",
+        "what is the job of a programmer",
+        "what is the job of a developer",
+        "what do software developers do"
+      ],
+      "responses": [
+        "A programmer (or developer / software engineer) writes, tests and maintains the code that makes software work. Daily tasks: understanding requirements, writing code, fixing bugs, reviewing teammates' code and learning new tools. Types: web developer, app developer, data scientist, game developer and more."
+      ]
+    },
+    {
+      "tag": "computer_basics",
+      "patterns": [
+        "what is a computer",
+        "define computer",
+        "parts of a computer",
+        "what is hardware",
+        "what is software",
+        "hardware vs software",
+        "types of software",
+        "what is system software",
+        "what is application software",
+        "what is firmware",
+        "input and output devices",
+        "what is a motherboard",
+        "what is a hard disk",
+        "what is an ssd",
+        "components of computer",
+        "full form of computer",
+        "what is a program in computer",
+        "difference between hardware and software",
+        "types of computers",
+        "what is a pc"
+      ],
+      "responses": [
+        "A computer is an electronic machine that takes input, processes it and gives output. Hardware = the physical parts (CPU, RAM, disk, keyboard, monitor). Software = the programs that run on it: system software (Windows, Linux) and application software (browser, games). Firmware is permanent software stored inside hardware."
+      ]
+    },
+    {
+      "tag": "data_info",
+      "patterns": [
+        "what is data",
+        "data vs information",
+        "what is information",
+        "difference between data and information",
+        "what is a file",
+        "what is a database record",
+        "types of data",
+        "what is structured data",
+        "what is unstructured data",
+        "define data",
+        "what is a dataset"
+      ],
+      "responses": [
+        "Data is raw facts such as numbers, text or images (for example: 45, 60, 72). Information is data that has been processed to give meaning (for example: \"the class average is 59\"). Data can be structured (tables, SQL) or unstructured (images, videos, free text)."
+      ]
+    },
+    {
+      "tag": "website_app",
+      "patterns": [
+        "what is a website",
+        "what is a web page",
+        "what is a web application",
+        "what is a mobile app",
+        "what is app development",
+        "what is android development",
+        "website vs web application",
+        "how are websites made",
+        "what is a web browser used for",
+        "how to make a website",
+        "how to make an app",
+        "what is a software application",
+        "what is a homepage",
+        "what is a web app"
+      ],
+      "responses": [
+        "A website is a collection of web pages you open in a browser. A web app is an interactive website that works like software (Gmail, this chatbot). A mobile app runs on phones (Android uses Kotlin/Java, iOS uses Swift; Flutter and React Native build for both). To make a site, learn HTML, CSS and JavaScript first."
+      ]
+    },
+    {
+      "tag": "syntax_basics",
+      "patterns": [
+        "what is syntax",
+        "what is a keyword in programming",
+        "what is an operator",
+        "types of operators",
+        "what is a comment in code",
+        "what is an identifier",
+        "what is a constant",
+        "what is input and output",
+        "what is a statement",
+        "what is an expression",
+        "what is indentation",
+        "what is a token",
+        "what is a library",
+        "what is a function call",
+        "what are arithmetic operators",
+        "what is print"
+      ],
+      "responses": [
+        "Basic programming terms: syntax = the grammar rules of a language. Keywords = reserved words like if, for, def. Operators = symbols like + - * / == and. Comments = notes ignored by the computer (# in Python). Identifier = a name you give to a variable or function. Constant = a value that should not change. A library = ready-made code you reuse."
+      ]
+    },
+    {
+      "tag": "language_types",
+      "patterns": [
+        "types of programming languages",
+        "high level vs low level language",
+        "what is assembly language",
+        "what is a scripting language",
+        "which language should i learn first",
+        "what is a high level language",
+        "what is a low level language",
+        "what are the generations of programming languages",
+        "what is a markup language",
+        "is html a programming language",
+        "what is object oriented language",
+        "how many programming languages are there",
+        "most popular programming languages",
+        "what is a programming paradigm",
+        "procedural vs object oriented"
+      ],
+      "responses": [
+        "Low-level languages (machine code, assembly) are close to hardware: fast but hard to write. High-level languages (Python, Java, C++) are closer to English and easier. Scripting languages (JavaScript, Python) automate tasks. HTML and CSS are markup/styling languages, not programming languages. For beginners, Python is the usual first choice."
+      ]
+    },
+    {
+      "tag": "logic",
+      "patterns": [
+        "what is logic building",
+        "how to improve logic in programming",
+        "what is problem solving",
+        "what is computational thinking",
+        "how to think like a programmer",
+        "how to build logic",
+        "what is programming logic",
+        "how to improve problem solving skills",
+        "what is a pattern program",
+        "how to improve coding skills",
+        "tips to learn coding",
+        "how to become good at coding",
+        "how to get better at programming",
+        "coding tips for beginners"
+      ],
+      "responses": [
+        "Logic building = breaking a problem into small steps a computer can follow. Tips: 1) Write the steps in plain English first. 2) Solve easy problems daily (loops, patterns, arrays). 3) Dry-run your code on paper. 4) Read other people's solutions after trying. 5) Build small projects regularly."
+      ]
+    },
+    {
+      "tag": "history",
+      "patterns": [
+        "who invented python",
+        "who created python",
+        "who is the father of computer",
+        "history of computers",
+        "who invented the computer",
+        "who invented the internet",
+        "generations of computers",
+        "who invented c language",
+        "who created java",
+        "who invented the world wide web",
+        "first programming language",
+        "who was the first programmer",
+        "first computer in the world",
+        "who is the father of python",
+        "who invented programming",
+        "who made python language",
+        "who developed python",
+        "who discovered python"
+      ],
+      "responses": [
+        "Python was created by Guido van Rossum (released 1991). Charles Babbage is the \"father of the computer\"; Ada Lovelace wrote the first algorithm for his machine, so she is called the first programmer. C was created by Dennis Ritchie (1972), Java by James Gosling (1995) and the World Wide Web by Tim Berners-Lee (1989)."
+      ]
+    }
+  ],
+  "fallback": [
+    "Sorry, I didn't quite get that. Try asking about coding, Python, data structures, DBMS, OS, networks, Git or project ideas.",
+    "Hmm, I'm not sure how to answer that. Could you rephrase it or use a keyword like \"what is coding\" or \"deadlock\"?",
+    "I don't know that one yet. Type \"help\" to see what I can do."
+  ]
+}

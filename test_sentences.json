@@ -1,0 +1,549 @@
+{
+  "in_scope": [
+    [
+      "hey, what's going on",
+      "greeting"
+    ],
+    [
+      "hello friend",
+      "greeting"
+    ],
+    [
+      "how are you feeling today",
+      "how_are_you"
+    ],
+    [
+      "how is life treating you",
+      "how_are_you"
+    ],
+    [
+      "may I know your name",
+      "name"
+    ],
+    [
+      "what do people call you",
+      "name"
+    ],
+    [
+      "who is behind you",
+      "creator"
+    ],
+    [
+      "who designed this bot",
+      "creator"
+    ],
+    [
+      "what are you able to do",
+      "capabilities"
+    ],
+    [
+      "show me what you can do",
+      "capabilities"
+    ],
+    [
+      "can you tell me the time",
+      "time"
+    ],
+    [
+      "what is the time right now",
+      "time"
+    ],
+    [
+      "which date is it today",
+      "date"
+    ],
+    [
+      "can you tell me the date",
+      "date"
+    ],
+    [
+      "tell me something funny",
+      "joke"
+    ],
+    [
+      "crack a joke",
+      "joke"
+    ],
+    [
+      "thanks a ton",
+      "thanks"
+    ],
+    [
+      "thank you kindly",
+      "thanks"
+    ],
+    [
+      "bye for now",
+      "goodbye"
+    ],
+    [
+      "I am leaving now",
+      "goodbye"
+    ],
+    [
+      "what does natural language processing mean",
+      "nlp"
+    ],
+    [
+      "explain natural language processing to me",
+      "nlp"
+    ],
+    [
+      "what is the nltk library used for",
+      "nltk"
+    ],
+    [
+      "tell me what nltk does",
+      "nltk"
+    ],
+    [
+      "how is tf-idf calculated",
+      "tfidf"
+    ],
+    [
+      "explain term frequency idf",
+      "tfidf"
+    ],
+    [
+      "how is cosine similarity computed",
+      "cosine"
+    ],
+    [
+      "what does cosine similarity measure",
+      "cosine"
+    ],
+    [
+      "how does this bot understand text",
+      "how_it_works"
+    ],
+    [
+      "explain how this chatbot works",
+      "how_it_works"
+    ],
+    [
+      "what is the flask framework used for",
+      "flask"
+    ],
+    [
+      "why use flask",
+      "flask"
+    ],
+    [
+      "why should I use python",
+      "python"
+    ],
+    [
+      "which language are you written in",
+      "python"
+    ],
+    [
+      "how does machine learning work",
+      "machine_learning"
+    ],
+    [
+      "what do you mean by machine learning",
+      "machine_learning"
+    ],
+    [
+      "what does artificial intelligence mean",
+      "ai"
+    ],
+    [
+      "explain what AI is",
+      "ai"
+    ],
+    [
+      "what are chatbots used for",
+      "chatbot"
+    ],
+    [
+      "explain what a chatbot is",
+      "chatbot"
+    ],
+    [
+      "how long ago were you made",
+      "age"
+    ],
+    [
+      "what age are you",
+      "age"
+    ],
+    [
+      "is it going to rain",
+      "weather"
+    ],
+    [
+      "tell me the weather forecast",
+      "weather"
+    ],
+    [
+      "can we be friends",
+      "love"
+    ],
+    [
+      "I really like you",
+      "love"
+    ],
+    [
+      "are you a real person",
+      "human"
+    ],
+    [
+      "are you a machine",
+      "human"
+    ],
+    [
+      "tell me about lists in python",
+      "python_list"
+    ],
+    [
+      "how do i make a dictionary",
+      "python_dict"
+    ],
+    [
+      "how to remove duplicates in python",
+      "python_set"
+    ],
+    [
+      "explain for loops to me",
+      "python_loops"
+    ],
+    [
+      "how do i write if else",
+      "python_conditions"
+    ],
+    [
+      "how do i create a function",
+      "python_functions"
+    ],
+    [
+      "what are oops",
+      "python_oop"
+    ],
+    [
+      "how does inheritance work",
+      "inheritance"
+    ],
+    [
+      "how to handle exceptions in python",
+      "python_exceptions"
+    ],
+    [
+      "how to open and read a text file",
+      "python_files"
+    ],
+    [
+      "how can i install pip packages",
+      "python_modules"
+    ],
+    [
+      "how to make a venv",
+      "virtualenv"
+    ],
+    [
+      "explain list comprehensions",
+      "list_comprehension"
+    ],
+    [
+      "how do decorators work",
+      "decorators"
+    ],
+    [
+      "how to reverse a string",
+      "python_strings"
+    ],
+    [
+      "best libraries for python",
+      "python_libraries"
+    ],
+    [
+      "what is a numpy array",
+      "numpy"
+    ],
+    [
+      "how to load a csv with pandas",
+      "pandas"
+    ],
+    [
+      "how do i draw a graph",
+      "matplotlib"
+    ],
+    [
+      "flask or django which is better",
+      "django"
+    ],
+    [
+      "explain neural nets",
+      "deep_learning"
+    ],
+    [
+      "how do i start learning to code",
+      "programming"
+    ],
+    [
+      "define an algorithm",
+      "algorithm"
+    ],
+    [
+      "types of data structures",
+      "data_structure"
+    ],
+    [
+      "difference between array and linked list",
+      "array"
+    ],
+    [
+      "difference between stack and queue",
+      "stack_queue"
+    ],
+    [
+      "explain binary tree",
+      "tree_graph"
+    ],
+    [
+      "how does hashing work",
+      "hashing"
+    ],
+    [
+      "how does quicksort work",
+      "sorting"
+    ],
+    [
+      "how does binary search work",
+      "searching"
+    ],
+    [
+      "recursion example",
+      "recursion"
+    ],
+    [
+      "tell me about time complexity",
+      "big_o"
+    ],
+    [
+      "compiler versus interpreter",
+      "compiler_interpreter"
+    ],
+    [
+      "how to find bugs in code",
+      "debugging"
+    ],
+    [
+      "what does rest api mean",
+      "api"
+    ],
+    [
+      "java versus python",
+      "oop_languages"
+    ],
+    [
+      "what are the subjects in cse",
+      "cse"
+    ],
+    [
+      "what does an operating system do",
+      "os"
+    ],
+    [
+      "difference between thread and process",
+      "process_thread"
+    ],
+    [
+      "what causes a deadlock",
+      "deadlock"
+    ],
+    [
+      "explain paging and virtual memory",
+      "memory_mgmt"
+    ],
+    [
+      "what is a primary key in a database",
+      "dbms"
+    ],
+    [
+      "how do sql joins work",
+      "sql"
+    ],
+    [
+      "explain 3nf",
+      "normalization"
+    ],
+    [
+      "mongodb versus mysql",
+      "nosql"
+    ],
+    [
+      "what are the types of networks",
+      "networking"
+    ],
+    [
+      "what are the layers of osi",
+      "osi"
+    ],
+    [
+      "how does dns work",
+      "internet"
+    ],
+    [
+      "what is cloud computing used for",
+      "cloud"
+    ],
+    [
+      "how does encryption work",
+      "security"
+    ],
+    [
+      "how does blockchain work",
+      "blockchain"
+    ],
+    [
+      "how does the cpu work",
+      "architecture"
+    ],
+    [
+      "how do i convert decimal to binary",
+      "binary"
+    ],
+    [
+      "explain agile and scrum",
+      "software_eng"
+    ],
+    [
+      "what is a turing machine",
+      "toc"
+    ],
+    [
+      "how to push code to github",
+      "github"
+    ],
+    [
+      "what are the basic git commands",
+      "git"
+    ],
+    [
+      "which ide is good for python",
+      "vscode"
+    ],
+    [
+      "how to use the command line",
+      "terminal"
+    ],
+    [
+      "what is a docker container",
+      "docker"
+    ],
+    [
+      "what tools do developers use",
+      "dev_tools"
+    ],
+    [
+      "which libraries does this chatbot use",
+      "project_tools"
+    ],
+    [
+      "how do i learn dsa",
+      "roadmap"
+    ],
+    [
+      "where can i practice coding",
+      "practice"
+    ],
+    [
+      "suggest a mini project",
+      "project_ideas"
+    ],
+    [
+      "what jobs are there for cse students",
+      "career"
+    ],
+    [
+      "hlooo bro",
+      "greeting"
+    ],
+    [
+      "hiiii",
+      "greeting"
+    ],
+    [
+      "heyyyy there",
+      "greeting"
+    ],
+    [
+      "hello hii",
+      "greeting"
+    ],
+    [
+      "hlo hlo",
+      "greeting"
+    ],
+    [
+      "good morning sir",
+      "greeting"
+    ],
+    [
+      "can you tell me what coding is",
+      "coding"
+    ],
+    [
+      "what do you mean by code",
+      "coding"
+    ],
+    [
+      "why is learning to code important",
+      "why_coding"
+    ],
+    [
+      "is coding really necessary",
+      "why_coding"
+    ],
+    [
+      "why do people say coding is important",
+      "why_coding"
+    ],
+    [
+      "what is computer science engineering",
+      "cse"
+    ],
+    [
+      "what is programming all about",
+      "programming"
+    ],
+    [
+      "is learning to code difficult",
+      "coding_hard"
+    ],
+    [
+      "difference between hardware and software",
+      "computer_basics"
+    ],
+    [
+      "who made python",
+      "history"
+    ],
+    [
+      "what is raw data",
+      "data_info"
+    ]
+  ],
+  "out_of_scope": [
+    "what is the capital of france",
+    "book a flight to delhi",
+    "who is the president of india",
+    "order me a pizza",
+    "play some music",
+    "how tall is mount everest",
+    "what is the stock price of apple",
+    "asdfgh",
+    "translate hello into french",
+    "set an alarm for seven",
+    "how do I cook rice",
+    "what is the capital of France",
+    "who won the world cup",
+    "best pizza recipe",
+    "what is photosynthesis",
+    "tell me about football",
+    "translate this sentence to hindi",
+    "what is the capital of france",
+    "how tall is mount everest"
+  ]
+}
