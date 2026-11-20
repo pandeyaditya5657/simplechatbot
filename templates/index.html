@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple NLP Chatbot</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:#eef1f6;display:flex;justify-content:center;align-items:center;min-height:100vh}
+  .chat{width:100%;max-width:440px;height:88vh;max-height:760px;background:#fff;border-radius:16px;box-shadow:0 6px 24px rgba(30,50,90,.15);display:flex;flex-direction:column;overflow:hidden}
+  header{background:#2d5fdb;color:#fff;padding:14px 18px}
+  header b{display:block;font-size:18px}
+  #log{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+  .msg{max-width:78%;padding:9px 13px;border-radius:14px;font-size:14px;line-height:1.45;word-wrap:break-word;white-space:pre-wrap}
+  .bot{background:#e8eefb;color:#1d2a44;align-self:flex-start}
+  .user{background:#2d5fdb;color:#fff;align-self:flex-end}
+  .meta{font-size:10px;opacity:.6;margin-top:4px}
+  form{display:flex;gap:8px;padding:12px;border-top:1px solid #e3e7ef}
+  input{flex:1;padding:10px 14px;border:1px solid #c9d2e3;border-radius:10px;font-size:14px;outline:none;font-family:inherit}
+  input:focus{border-color:#2d5fdb}
+  .typing{display:flex;gap:5px;align-items:center;padding:13px 15px}
+  .typing i{width:7px;height:7px;border-radius:50%;background:#7b8db8;display:block;animation:bounce 1.2s infinite ease-in-out}
+  .typing i:nth-child(2){animation-delay:.15s}
+  .typing i:nth-child(3){animation-delay:.3s}
+  @keyframes bounce{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-5px);opacity:1}}
+  .cursor::after{content:"";display:inline-block;width:2px;height:1em;background:#2d5fdb;margin-left:2px;vertical-align:text-bottom;animation:blink .8s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  button:disabled{opacity:.6;cursor:default}
+  button{background:#2d5fdb;color:#fff;border:0;border-radius:10px;padding:0 18px;font-size:14px;font-weight:600;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="chat">
+  <header><b>Simple NLP Chatbot</b></header>
+  <div id="log"></div>
+  <form id="f">
+    <input id="in" placeholder="Type a message..." autocomplete="off" autofocus>
+    <button>Send</button>
+  </form>
+</div>
+<script>
+const log = document.getElementById('log');
+const form = document.getElementById('f');
+const input = document.getElementById('in');
+const button = form.querySelector('button');
+
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function scrollDown() { log.scrollTop = log.scrollHeight; }
+
+function add(text, who, meta) {
+  const d = document.createElement('div');
+  d.className = 'msg ' + who;
+  d.textContent = text;
+  if (meta) {
+    const m = document.createElement('div');
+    m.className = 'meta';
+    m.textContent = meta;
+    d.appendChild(m);
+  }
+  log.appendChild(d);
+  scrollDown();
+  return d;
+}
+
+// bouncing "..." bubble shown while the bot is thinking
+function showTyping() {
+  const d = document.createElement('div');
+  d.className = 'msg bot typing';
+  d.innerHTML = '<i></i><i></i><i></i>';
+  log.appendChild(d);
+  scrollDown();
+  return d;
+}
+
+// typewriter reveal of the bot's answer
+async function botSay(text, meta) {
+  const d = document.createElement('div');
+  d.className = 'msg bot';
+  const body = document.createElement('span');
+  d.appendChild(body);
+  log.appendChild(d);
+  if (reduceMotion) {
+    body.textContent = text;
+  } else {
+    d.classList.add('cursor');
+    const delay = Math.min(25, Math.max(8, 1800 / text.length)); // long answers type faster
+    for (let i = 1; i <= text.length; i++) {
+      body.textContent = text.slice(0, i);
+      scrollDown();
+      await sleep(delay);
+    }
+    d.classList.remove('cursor');
+  }
+  if (meta) {
+    const m = document.createElement('div');
+    m.className = 'meta';
+    m.textContent = meta;
+    d.appendChild(m);
+  }
+  scrollDown();
+}
+
+botSay('Hi! Ask me about coding, Python, data structures, CSE subjects (OS, DBMS, networks) or tools like Git and Docker. Type "help" to see more.');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const message = input.value.trim();
+  if (!message) return;
+  add(message, 'user');
+  input.value = '';
+  input.disabled = true;
+  button.disabled = true;
+
+  const typing = showTyping();
+  const started = Date.now();
+  // the user's own local time/date, so "what time is it" is correct anywhere
+  const now = new Date();
+  const client_time = now.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+  const client_date = now.toLocaleDateString('en-GB', {weekday: 'long', day: '2-digit', month: 'long', year: 'numeric'});
+
+  let reply, meta = '';
+  try {
+    const res = await fetch('/chat', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({message, client_time, client_date})
+    });
+    const data = await res.json();
+    reply = data.reply || 'Error';
+    if (data.intent) meta = 'intent: ' + data.intent + ' · confidence: ' + data.confidence;
+  } catch (err) {
+    reply = 'Could not reach the server.';
+  }
+  // keep the dots visible for a natural moment (at least ~700 ms)
+  const wait = 700 - (Date.now() - started);
+  if (wait > 0) await sleep(wait);
+  typing.remove();
+  await botSay(reply, meta);
+
+  input.disabled = false;
+  button.disabled = false;
+  input.focus();
+});
+</script>
+</body>
+</html>
